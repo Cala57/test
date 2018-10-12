@@ -1,0 +1,42 @@
+git --help 
+=> show all the commands available
+git add nameOfMyFile || git add .
+=> add all the updated/created files to the staging area
+git status
+=> check all the files updated/created
+git rm --cached nameOfMyFile || git reset .
+=> remove file(s) from the staging area
+git ls-files --others --exclude-standard
+=> check the files not followed (on the working directory only)
+git commit -m ‘my details here’
+=> check all the changes made. CAREFUL: be really specific about the commit message
+git commit -a -m ‘my details here’
+=> add & commit at the same time
+git log || git log --oneline || git shortlog
+=> see the history of commit || see only the messages || see the responsible for the commit
+git branch
+=> show all the branches in your project (branch with a * is the current one)
+git checkout develop
+=> you are going in the ‘develop’ branch’
+git branch -d nameOfTheBranch
+=> delete a local branch
+git pull || git fetch + git merge
+=> allow me to get the work of others from the remote
+git push origin --delete nameOfTheBranch
+=> delete a remote branch
+git remote show origin
+=> see and compare all the branches from origin to the local
+git remote update origin
+=> update the repo from origin
+git mv examples.html newName.html
+=> rename the name of the file examples.html
+git rm examples.html
+=> delete the page examples.html + ADD
+git reset HEAD^
+=> delete the last commit and restore working directory
+git config --global --unset-all user.name
+=> delete and reset the user.name
+git remote -v
+=> check the remote path
+git remote remove origin
+=> logout from your project on the remote
